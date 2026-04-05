@@ -1,0 +1,14 @@
+--- VISUALIZING DATA DISTRIBUTIONS ---
+[PLOTS GENERATED]
+
+Fig 1: Histogram of Meta Scores (Outcome)
+
+Fig 2: Histogram of User Scores (Input)
+
+Fig 3: Scatter Plot - Actual vs. Predicted (Linear Trend)
+
+--- MODEL EVALUATION (LINEAR REGRESSION) ---
+
+Model Evaluation (Linear Regression):
+Mean Squared Error: 114.72
+R-squared: 0.26

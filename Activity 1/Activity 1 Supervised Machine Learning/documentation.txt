@@ -1,0 +1,31 @@
+TASK 1: PROBLEM IDENTIFICATION
+
+Outcome Variable: metascore (The continuous numerical score from critics).
+
+Input Variables: userscore (user sentiment), platforms, and genres.
+
+Learning Approach: Regression, because the target is a continuous numerical value.
+
+Selected Machine Learning Method: Linear Regression. This algorithm was chosen because it effectively models the direct relationship between input features and the outcome score, providing high interpretability.
+
+Visualizations: Histograms were used to represent the distribution of the outcome (metascore) and the primary input (userscore), showing the frequency and spread of game ratings.
+
+TASK 2: SUPERVISED MACHINE LEARNING IMPLEMENTATION
+
+Data Loading: The dataset is loaded using the pandas library from a CSV file.
+
+Implementation:
+
+Data Cleaning: Handled "tbd" values in user scores using pd.to_numeric and dropped missing values.
+
+Feature Engineering: Applied one-hot encoding to genres and platforms to convert categorical text into binary numerical data.
+
+Training: The data was split into an 80/20 ratio for training and testing before fitting the LinearRegression model.
+
+Evaluation: Metrics: The model is evaluated using Mean Squared Error (MSE) and R-squared (R2).
+
+Improvement Strategies: Accuracy could be improved by adding more features (like developer reputation) or by performing feature scaling to normalize the different ranges of user and critic scores.
+
+TASK 3: REFLECTION
+
+The biggest challenge was cleaning the dataset, specifically converting the "tbd" strings in the userscore column into numeric values so the model wouldn't crash. I also had to use one-hot encoding for the genres and platforms to transform that categorical text into numbers the linear equation could actually process. Through this project, I learned how much the distribution of data, like the clusters seen in my histograms, impacts the final prediction. Using Linear Regression showed me the direct relationship between user sentiment and critic scores in a way that was easy to interpret. Overall, this taught me that Supervised Learning is just as much about careful data preparation as it is about the actual math.
